@@ -5,7 +5,8 @@
    "main": "app.js",
    "scripts": {
       "start": "nodemon ./app.js",
-      "test": "jest --forceExit"
+      "test": "jest --forceExit",
+      "build":""
    },
    "author": "",
    "license": "ISC",
