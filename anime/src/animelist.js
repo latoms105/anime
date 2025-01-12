@@ -8,7 +8,7 @@ function AnimeList({ animeData, fetchAnimeData }) {
 
    const handleDeleteComment = (animeId, commentId) => {
       axios
-         .delete(`http://localhost:3001/api/reviews/${animeId}/comments/${commentId}`)
+         .delete(`https://anime-h6dy.onrender.com/api/reviews/${animeId}/comments/${commentId}`)
          .then(() => {
             alert('Comment deleted successfully!');
             fetchAnimeData(); // Refresh data after deletion

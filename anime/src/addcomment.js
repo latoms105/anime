@@ -9,7 +9,7 @@ function AddComment({ animeId, fetchAnimeData }) {
       e.preventDefault();
 
       axios
-         .post(`http://localhost:3001/api/reviews/${animeId}/comments`, { text, author })
+         .post(`https://anime-h6dy.onrender.com/api/reviews/${animeId}/comments`, { text, author })
          .then(() => {
             alert('Comment added successfully!');
             setAuthor('');

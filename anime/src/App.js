@@ -10,7 +10,7 @@ function App() {
    // Fetch anime data from the backend
    const fetchAnimeData = () => {
       axios
-         .get('http://localhost:3001/api/reviews')
+         .get('https://anime-h6dy.onrender.com/api/reviews')
          .then((response) => setAnimeData(response.data))
          .catch((err) => setError('Failed to fetch anime data: ' + err.message));
    };

@@ -9,7 +9,7 @@ function EditComment({ animeId, comment, fetchAnimeData, toggleEdit }) {
       e.preventDefault();
 
       axios
-         .put(`http://localhost:3001/api/reviews/${animeId}/comments/${comment.id}`, {
+         .put(`https://anime-h6dy.onrender.com/api/reviews/${animeId}/comments/${comment.id}`, {
             text: editedText,
             author: editedAuthor,
          })
